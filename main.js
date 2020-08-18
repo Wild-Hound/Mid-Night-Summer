@@ -26,4 +26,10 @@ $(document).ready(function () {
       1000
     );
   });
+
+  AOS.init({
+    easing: "ease",
+    duration: 1800,
+    once: true,
+  });
 });

@@ -348,3 +348,80 @@ hr {
   margin: 0 auto 20px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 770px) {
+  #header {
+    background-image: none;
+  }
+
+  .container {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .logo {
+    margin-top: 27px;
+    width: 70px;
+  }
+
+  .header-text {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  #menu-btn {
+    width: 40px;
+    right: 50px;
+  }
+
+  .common-btn {
+    padding: 10px 16px;
+  }
+
+  .about-left-col {
+    flex-basis: 100%;
+  }
+  .about-right-col {
+    flex-basis: 100%;
+  }
+
+  .about-text {
+    margin: 50px 50px;
+    display: inline-block;
+  }
+
+  .about-text h2 {
+    font-size: 18px;
+  }
+
+  .feature-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .course-left-col {
+    flex-basis: 100%;
+  }
+
+  .course-right-col {
+    flex-basis: 100%;
+  }
+
+  .contact-right-col,
+  .contact-left-col {
+    flex-basis: 100%;
+  }
+
+  .footer-left-col,
+  .footer-right-col {
+    flex-basis: 100%;
+  }
+
+  .link-title {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+}

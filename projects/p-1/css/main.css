@@ -4,32 +4,32 @@
 }
 .main {
   width: 75%;
-  height: 100vh;
   background-color: #0d0e0e;
   margin-left: auto;
 }
 
-.main .sec-1 {
+.main .sec {
   display: flex;
   width: 85%;
   margin: auto;
 }
 
-.main .sec-1 img {
+.main .sec img {
   height: 100vh;
-  padding: 0 20px;
+  width: 50%;
 }
 
-.main .sec-1 .text {
+.main .sec .text {
   margin: auto;
-  padding: 40px;
+  padding: 0 80px;
+  width: 50%;
 }
 
-.main .sec-1 .text * {
+.main .sec .text * {
   color: white;
 }
 
-.main .sec-1 .text .sub-heading {
+.main .sec .text .sub-heading {
   font-family: "Poppins", Arial, sans-serif;
   color: rgba(232, 230, 227, 0.2);
   font-size: 0.95rem;
@@ -37,14 +37,14 @@
   margin-bottom: 5px;
 }
 
-.main .sec-1 .text .heading {
+.main .sec .text .heading {
   font-family: "Abril Fatface", cursive;
   font-size: 2.5rem;
   color: rgb(232, 230, 227);
   margin-bottom: 30px;
 }
 
-.main .sec-1 .text .disc {
+.main .sec .text .disc {
   font-family: "Poppins", Arial, sans-serif;
   color: rgb(168, 160, 149);
   line-height: 1.8;
@@ -53,7 +53,7 @@
   position: relative;
   padding-left: 20px;
 }
-.main .sec-1 .text .disc::after {
+.main .sec .text .disc::after {
   position: absolute;
   top: 10px;
   left: 0;
@@ -63,7 +63,20 @@
   background-color: rgb(180, 143, 10);
 }
 
-.main .sec-1 .text .view-btn {
+.main .sec .right {
+  text-align: right;
+}
+
+.main .sec .right .disc {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.main .sec .right .disc::after {
+  left: 100%;
+}
+
+.main .sec .text .view-btn {
   font-family: "Poppins", Arial, sans-serif;
   color: rgb(244, 203, 53);
   border: 1px solid #f3c623;
@@ -72,4 +85,26 @@
   font-weight: 700;
   padding: 2px 5px;
   background-color: transparent;
+}
+
+.load-more {
+  width: 85%;
+  margin: auto;
+  background-color: #b48f0a;
+  text-align: center;
+  padding: 25px 0;
+  letter-spacing: 3px;
+}
+.load-more a {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: color 1s ease;
+}
+.load-more:hover {
+  cursor: pointer;
+}
+.load-more:hover a {
+  color: white;
 }
